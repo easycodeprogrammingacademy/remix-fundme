@@ -2,12 +2,12 @@
 
 pragma solidity ^0.8.24;
 
-import "./Priceconverter.sol";
+import "./PriceConverter.sol";
 
 error NotOwner();
 
 contract Fundme {
-    using Priceconverter for uint256;
+    using PriceConverter for uint256;
 
     mapping(address => uint256) public addressToAmountFunded;
     address[] public funders;
